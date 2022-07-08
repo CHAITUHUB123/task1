@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let numbers=[12,11,13,23,29,33,34];
+		console.log(numbers);
+		numbers=numbers.sort();
+		document.write(numbers);
+		document.write("<br><br>");
+
+		
+
+		for(let i=0;i<=numbers.length-1;i++){
+
+			numbers=numbers.sort().reverse();
+			document.write(numbers[i]+"<br>");
+			console.log(numbers);
+}
+
+
+        //sum of an array
+
+		let sum = 0;
+		for (let i = 0;i<numbers.length; i++) {
+			sum += numbers[i];
+			
+		}
+		console.log(sum);
+		document.write("<br>"+sum);
+
+
+		//average of an array
+
+		let avg=0;
+		let size=numbers.length;
+		for(let i=0;i<size;i++){
+			avg += numbers[i];
+
+		}
+		console.log(size);
+		document.write("<br>"+avg/size);
+
+	//using math--max value
+       let maxValue = Math.max(...numbers);
+        document.write("<br>"+maxValue);
+
+    //using math-min value
+
+        let minValue = Math.min(...numbers);
+        document.write("<br>"+minValue);
+
+     //max number
+        let max = numbers[0];
+        for (let i = 1; i < numbers.length; ++i) {
+        if (numbers[i] > max) {
+        max = numbers[i];
+  }
+}
+      //  min number
+      let min = numbers[0];
+      for (let i = 1; i < numbers.length; ++i) {
+      if (numbers[i] < min) {
+      min = numbers[i];
+  }
+}
+console.log('Maximum value from numbers :- ' + max);
+ document.write("<br>"+max);
+
+console.log('Minimum value from numbers :- ' + min);
+ document.write("<br>"+min);
+
+
+
+
+	</script>
+
+</body>
+</html>
